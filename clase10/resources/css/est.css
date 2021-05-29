@@ -1,0 +1,18 @@
+#platillos{
+    
+    background-color: brown;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#platillos section img{
+    width: 180px;
+    height: 100px;
+}
+#platillos section h1{
+   color: burlywood;
+   background-color: crimson;
+   border-radius: 10px;
+}

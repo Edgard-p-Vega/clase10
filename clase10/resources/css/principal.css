@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(246, 246, 248);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+#miMenu {
+    width: 80%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#miMenu ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-content: center;
+    width: 100%;
+}
+
+#miMenu ul li{
+    list-style: none;
+    margin: 10px auto;
+}
+
+.btn-Toggle {
+    display: none;
+}
+
+body{
+    background: url('../images/banner.jpeg') no-repeat;
+    background-size: cover;
+}
+
+/* Categorias de Menu**/
+#categorias{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#categorias article{
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border-color: aquamarine;
+    box-shadow: black;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#categorias article h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+/*pie de pagina*/
+
+#infoContact{
+    text-align: center;
+}
+#infoContact h2{
+    color: brown;
+    border-radius: 50px;
+    background-color: rgb(253, 165, 0);
+}
+#redes{
+    margin:20px;
+    padding: 20px;
+    color: white;
+    background-color: tomato;
+}
+#redes span{
+    margin:20px;
+    padding: 20px;
+}
+
+/* Definiendo los media queries para dispositivos Medianos*/
+@media only screen and (max-width: 760px){
+    body{
+        background: rgba(241, 114, 9, 0.849);
+    }
+
+    /* Coloco miMenu Verticalmente*/
+    header{
+        height: 100%;
+    }
+
+    #miMenu{
+        background-color: cornflowerblue;
+    }
+
+    #miMenu ul{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .btn-Toggle{
+        display: block;
+    }
+
+    #categorias article p{
+        display: none;
+    }
+
+    /*PLatillos mediano*/
+    
+    #platillos section img{
+        display: none;
+    } 
+}
+
+/** Pie de pagina*/
+#infoContact{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+/* media queries para pantallas pequeñas*/
+@media all and (max-width: 600px){
+    body {
+        background: rgba(5, 5, 90, 0.911);
+    }
+
+    /* Coloco miMenu Verticalmente*/
+    #miMenu{
+        background-color: cornflowerblue;
+    }
+
+    header{
+        flex-direction: column;
+        height: 100%;
+    }
+    #miMenu ul{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .btn-Toggle{
+        display: block;
+    }
+
+    /** Slider de Imagenes**/
+    #sliderImg{
+        display: none;
+    }
+   
+    /*platillos Pequeños*/
+
+    #platillos section img{
+        display: none;
+    } 
+    
+    #platillos section h2{
+        font-size: small;
+        color: cornsilk;
+        background-color: darksalmon;
+    }
+    
+    #platillos section p{
+        color: beige;
+
+    }
+    #platillos section h1{
+        display: none;
+        
+    }
+    /*pie pag*/
+    #infoContact{
+        flex-direction: column;
+        width: 100%;
+    }
+    #redes span{
+        flex-direction: column;
+        width: 70%;
+        
+    }
+    #mapa{
+        display: none;
+    }  
+
+}
+
+/********/
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    body{
+        background: rgb(39, 88, 5)
+    }
+}
